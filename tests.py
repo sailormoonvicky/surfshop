@@ -72,7 +72,7 @@ class SurfShopSystemTest(unittest.TestCase):
     def test_apply_local_discount(self):
         self.cart.apply_locals_discount()
         self.assertTrue(
-            self.cart._locals_discount,
+            self.cart.locals_discount,
             "Local discount should be set to True after applying the discount")
 
 unittest.main()

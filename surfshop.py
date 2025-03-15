@@ -32,5 +32,15 @@ class ShoppingCart:
             raise CheckoutDateError
         self._checkout_date = date
 
+    @property
+    def locals_discount(self):
+        return self._locals_discount
+
+    @locals_discount.setter
+    def locals_discount(self, value):
+        if not isinstance(value, bool):
+            raise ValueError('Should input True or False')
+        self._locals_discount = value
+
     def apply_locals_discount(self):
-        self._locals_discount = True
+        self.locals_discount = True
