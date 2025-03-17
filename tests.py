@@ -4,7 +4,7 @@ from datetime import datetime, timedelta
 
 class SurfShopSystemTest(unittest.TestCase):
 
-#Create a fresh ShoppingCart instance before each test
+    #Create a fresh ShoppingCart instance before each test
     def setUp(self):
         self.cart = surfshop.ShoppingCart()
 
